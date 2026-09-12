@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "NightRiding",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "A beautiful, native-feeling Dark Mode for every website. Clean, easy to use, and designed to never break the pages you visit.",
+        "description": "Description of what the extension does."
+    }
+}
