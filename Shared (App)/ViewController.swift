@@ -46,7 +46,14 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
     }
 
     private func refreshExtensionState() {
-        SFSafariExtensionManager.getStateOfSafariExtension(withIdentifier: extensionBundleIdentifier) { (state, error) in
+        guard #available(iOS 26.2, *) else {
+            // Extension state detection isn't available on this OS;
+            // the screen stays on the neutral instructions until the
+            // user enables the extension via the button below.
+            return
+        }
+
+        SFSafariExtensionManager.getStateOfExtension(withIdentifier: extensionBundleIdentifier) { (state, error) in
             guard let state = state, error == nil else {
                 return
             }
