@@ -49,11 +49,6 @@ NightRiding has **no network access, no analytics, and collects no data**. All p
 3. Run the **NightRiding** target on your device or Mac.
 
 4. Launch NightRiding once, then enable the extension as described above.
-## App Store Notes
-
-- The extension is embedded in the app; publishing the app publishes the extension — there is no separate listing.
-- App Review will test the **enable-in-Settings flow**, so the onboarding screen in the app (which links users to Safari Settings) matters.
-- Because NightRiding requests broad website access, mention in your review notes that the extension only reads page colors to restyle them locally and stores nothing off-device.
 
 ## Project Layout
 
